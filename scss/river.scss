@@ -1,0 +1,25 @@
+@use "all.scss" as m;
+
+.river {
+  width: 95%;
+  max-width: m.$globalMaxWidth;
+  background: gainsboro url('river.gif') no-repeat bottom;
+  background-size: cover;
+  min-height: 250px;
+  position: relative;
+  margin-bottom: 5rem;
+
+  &::before,
+  &::after {
+    position: absolute;
+    inset: 0;
+    content: '';
+  }
+  &::after {
+    background: linear-gradient(white, #ffffff50, white);
+  }
+  &::before {
+    background: linear-gradient(90deg,white, transparent, white);
+  }
+
+}

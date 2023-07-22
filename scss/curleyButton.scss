@@ -1,0 +1,35 @@
+$curleyBtnSize: min(4dvw, 25px);
+.curleyBtn {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size:$curleyBtnSize;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &::before,
+  &::after {
+    font-size: 20px;
+    transition: .5s;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      margin: 1em;
+    }
+  }
+
+  &::before,
+  &::after {
+    font-size: $curleyBtnSize;
+  }
+
+  &::before {
+    content: '{';
+  }
+
+  &::after {
+    content: '}';
+  }
+}

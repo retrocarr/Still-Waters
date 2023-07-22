@@ -1,0 +1,50 @@
+@use "all.scss" as m;
+
+footer {
+  color: white;
+  background-color: #333;
+  height: fit-content;
+
+  div {
+    padding: 5em;
+    gap: 1em;
+    max-width: m.$globalMaxWidth;
+    margin: 0 auto;
+  }
+
+  h1:not(h1.logo) {
+    background-color: #afeeee30;
+    padding: .2em .5em;
+    margin: 1.5em 0 .7em;
+    color: paleturquoise;
+    width: fit-content;
+    border-radius: 7% 8% 8% 7% / 48% 52% 47% 52%;
+    margin-left: 5%;
+  }
+
+  .logo {
+    text-align: center;
+    margin: 0 1em;
+    border-bottom: 1px solid antiquewhite;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+  }
+  a {
+    font-size: x-large;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+}
+
+@media (width > 900px) {
+  footer div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}

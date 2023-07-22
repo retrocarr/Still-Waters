@@ -86,7 +86,7 @@ export default function App() {
         ).map(i => i)}
       </section>
 
-      <div className="images">
+      {/* <div className="images">
 
         <div className="verticalCon">
           <figure>
@@ -98,8 +98,39 @@ export default function App() {
             <p><Paragraph min={30} max={50} /></p>
           </div>
         </div>
+        <div className="verticalCon">
+          <figure>
+            <img src="https://picsum.photos/351/300" />
+            <figcaption>random image</figcaption>
+          </figure>
+          <div className='text'>
+            <h1>im a filler header</h1>
+            <p><Paragraph min={30} max={50} /></p>
+          </div>
+        </div>
 
-      </div>
+        <div className="verticalCon">
+          <figure>
+            <img src="https://picsum.photos/349/300" />
+            <figcaption>random image</figcaption>
+          </figure>
+          <div className='text'>
+            <h1>im a filler header</h1>
+            <p><Paragraph min={30} max={50} /></p>
+          </div>
+        </div>
+        <div className="verticalCon">
+          <figure>
+            <img src="https://picsum.photos/350/301" />
+            <figcaption>random image</figcaption>
+          </figure>
+          <div className='text'>
+            <h1>im a filler header</h1>
+            <p><Paragraph min={30} max={50} /></p>
+          </div>
+        </div>
+
+      </div> */}
 
     </main>
     <footer>

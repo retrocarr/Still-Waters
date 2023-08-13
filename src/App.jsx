@@ -15,6 +15,7 @@ import { AiFillLinkedin } from 'react-icons/ai'
 import { LoremIpsum } from "lorem-ipsum";
 import { useEffect, useRef } from 'react'
 
+// todo: no way dude 
 
 /** 
  * @param range: {min:5, max:30}
@@ -37,22 +38,7 @@ function Paragraph({ min, max }) {
   })
   const randText = lorem.generateWords(randRange)
   return <>{randText}</>
-}
-
-function Test({ children, }) {
-  const hiddenElements = document.querySelectorAll('.hidden')
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show')
-      } else { entry.target.classList.remove('show') }
-    })
-  }); const item = useRef()
-  useEffect(() => {
-    observer.observe(item.current)
-  }, [])
-  return <div ref={item} className="hidden">{children}</div>
-}
+} 
 
 export default function App() {
   return <>
